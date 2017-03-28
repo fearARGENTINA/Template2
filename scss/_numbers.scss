@@ -1,0 +1,119 @@
+
+section.numbers {
+	background-color: white;
+	padding: 100px 0;
+
+	.row {
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		margin: 30px 0;
+
+		h2 {
+			font-size: 40px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.box {
+			a {
+				text-decoration: none;
+				article {
+					width: 90%;
+					background-color:black;
+					margin: 10px auto;
+					height: 300px;
+					padding: 30px;
+					color: white;
+
+					.circle	{
+						transition: all 0.5s ease;
+						width: 80px;
+						height: 80px;
+						border-radius: 50%;
+						border: 3px solid white;
+						line-height: 80px;
+						margin: 0 auto;
+
+						i {
+							font-size: 50px;	
+						}
+					}
+
+					h3 {
+						font-size: 50px;
+						font-weight: 700;
+					}
+
+					p {
+						margin-top: 20px;
+						font-size: 20px;
+						font-weight: lighter;
+					}
+
+					&:hover  {
+						background-color: rgb(230, 230, 230) !important;
+						
+					}
+				}	
+			}
+			
+
+			&:nth-child(1) article {
+				background-color: rgb(179, 0, 107);
+
+				&:hover {
+					color: rgb(179, 0, 107);
+
+					.circle {
+						border: 3px outset rgb(179, 0, 107);
+							
+					}
+				}
+			}
+
+			&:nth-child(2) article {
+				background-color: rgb(250, 42, 87);
+			
+				&:hover {
+					color: rgb(250, 42, 87);
+
+					.circle {
+						border: 3px outset rgb(250, 42, 87);
+							
+					}
+				}
+			}
+
+			&:nth-child(3) article {
+				background-color: rgb(255, 119, 1);
+				
+				&:hover {
+					color: rgb(255, 119, 1);
+
+					.circle {
+						border: 3px outset rgb(255, 119, 1);
+							
+					}
+				}
+			}
+
+			&:nth-child(4) article {
+				background-color: rgb(255, 179, 32);
+				
+				&:hover {
+					color: rgb(255, 179, 32);
+
+					.circle {
+						border: 3px outset rgb(255, 179, 32);			
+					}
+				}
+			}
+		}
+	}	
+}

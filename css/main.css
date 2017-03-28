@@ -1,0 +1,361 @@
+@import "https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1280px; } }
+body {
+  font-family: "Roboto", sans-serif;
+  margin-top: 82px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+.navbar {
+  position: fixed;
+  background: #212331;
+  top: 0;
+  width: 100%;
+  z-index: 998; }
+  .navbar .icon-bar {
+    background-color: white; }
+  .navbar .brand {
+    font-size: 28px;
+    line-height: 82px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none; }
+    @media only screen and (max-width: 768px) {
+      .navbar .brand {
+        margin-left: 15px; } }
+    .navbar .brand a {
+      color: #fff; }
+  .navbar .the-logo {
+    position: absolute;
+    top: 40px; }
+  .navbar ul {
+    padding: 0;
+    margin: 0; }
+    .navbar ul li {
+      display: inline-block;
+      padding: 15px 0; }
+      @media only screen and (max-width: 768px) {
+        .navbar ul li {
+          text-align: center;
+          display: block; } }
+      .navbar ul li:last-child {
+        padding-left: 0; }
+      .navbar ul li a {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase; }
+      .navbar ul li a:hover {
+        color: black; }
+      .navbar ul li a:focus {
+        color: black; }
+  .navbar .navbar-toggle {
+    padding: 25px 10px; }
+
+.function {
+  position: relative;
+  padding: 60px 0; }
+  .function h2 {
+    color: #222;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px; }
+  @media only screen and (max-width: 768px) {
+    .function article {
+      margin-top: 30px;
+      margin-bottom: 20px; } }
+  .function article:first-child {
+    margin-top: 120px; }
+    @media only screen and (max-width: 768px) {
+      .function article:first-child {
+        margin-top: 30px; } }
+  .function article h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 768px) {
+      .function article h4 {
+        text-align: center; } }
+  .function article p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px; }
+    @media only screen and (max-width: 768px) {
+      .function article p {
+        text-align: center; } }
+  .function .carousel-inner .phone {
+    display: inline; }
+
+section.numbers {
+  background-color: white;
+  padding: 100px 0; }
+  section.numbers .row {
+    margin: 30px 0; }
+    section.numbers .row:first-child {
+      margin-top: 0; }
+    section.numbers .row:last-child {
+      margin-bottom: 0; }
+    section.numbers .row h2 {
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase; }
+    section.numbers .row .box a {
+      text-decoration: none; }
+      section.numbers .row .box a article {
+        width: 90%;
+        background-color: black;
+        margin: 10px auto;
+        height: 300px;
+        padding: 30px;
+        color: white; }
+        section.numbers .row .box a article .circle {
+          transition: all 0.5s ease;
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 3px solid white;
+          line-height: 80px;
+          margin: 0 auto; }
+          section.numbers .row .box a article .circle i {
+            font-size: 50px; }
+        section.numbers .row .box a article h3 {
+          font-size: 50px;
+          font-weight: 700; }
+        section.numbers .row .box a article p {
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: lighter; }
+        section.numbers .row .box a article:hover {
+          background-color: #e6e6e6 !important; }
+    section.numbers .row .box:nth-child(1) article {
+      background-color: #b3006b; }
+      section.numbers .row .box:nth-child(1) article:hover {
+        color: #b3006b; }
+        section.numbers .row .box:nth-child(1) article:hover .circle {
+          border: 3px outset #b3006b; }
+    section.numbers .row .box:nth-child(2) article {
+      background-color: #fa2a57; }
+      section.numbers .row .box:nth-child(2) article:hover {
+        color: #fa2a57; }
+        section.numbers .row .box:nth-child(2) article:hover .circle {
+          border: 3px outset #fa2a57; }
+    section.numbers .row .box:nth-child(3) article {
+      background-color: #ff7701; }
+      section.numbers .row .box:nth-child(3) article:hover {
+        color: #ff7701; }
+        section.numbers .row .box:nth-child(3) article:hover .circle {
+          border: 3px outset #ff7701; }
+    section.numbers .row .box:nth-child(4) article {
+      background-color: #ffb320; }
+      section.numbers .row .box:nth-child(4) article:hover {
+        color: #ffb320; }
+        section.numbers .row .box:nth-child(4) article:hover .circle {
+          border: 3px outset #ffb320; }
+
+/* Carousel base class */
+.carousel {
+  margin-top: 110px;
+  height: 560px;
+  margin: 0; }
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  left: 15%;
+  bottom: 10%;
+  z-index: 10; }
+  @media only screen and (max-width: 767px) {
+    .carousel-caption {
+      bottom: 5%; } }
+
+.carousel .item {
+  height: 560px;
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 767px) {
+    .carousel .item {
+      background-position: left; } }
+  .carousel .item h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    max-width: 800px; }
+    @media only screen and (max-width: 992px) {
+      .carousel .item h1 {
+        font-size: 48px;
+        line-height: 60px;
+        max-width: none; } }
+    @media only screen and (max-width: 767px) {
+      .carousel .item h1 {
+        font-size: 30px;
+        line-height: 45px;
+        text-shadow: none;
+        max-width: none; } }
+  .carousel .item h2 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: none;
+    margin: 20px 0; }
+    @media only screen and (max-width: 992px) {
+      .carousel .item h2 {
+        font-size: 20px;
+        line-height: 35px;
+        margin: 15px 0; } }
+    @media only screen and (max-width: 767px) {
+      .carousel .item h2 {
+        font-size: 18px;
+        line-height: 30px;
+        margin: 10px 0; } }
+  .carousel .item .btn-primary {
+    color: #ed0973;
+    font-weight: 500;
+    background: #fff;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    border-radius: 0;
+    margin-right: 20px; }
+    @media only screen and (max-width: 767px) {
+      .carousel .item .btn-primary {
+        width: 100%;
+        margin: 20px 0; } }
+  .carousel .item .btn-transparent {
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 0; }
+    @media only screen and (max-width: 767px) {
+      .carousel .item .btn-transparent {
+        width: 100%; } }
+    .carousel .item .btn-transparent:hover {
+      color: #ed0973;
+      background: #fff; }
+
+.features {
+  position: relative;
+  padding: 100px 0;
+  background-image: url("../images/4-26.jpg");
+  background-color: #222;
+  background-size: cover;
+  background-position: center; }
+  @media only screen and (max-width: 768px) {
+    .features {
+      padding: 30px 0; } }
+  .features .row {
+    margin-top: 100px; }
+    @media only screen and (max-width: 768px) {
+      .features .row {
+        margin-top: 40px; } }
+  .features h2 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .features h3 {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .features h3 {
+        font-size: 18px;
+        line-height: 28px; } }
+  @media only screen and (max-width: 768px) {
+    .features article {
+      margin-bottom: 40px; } }
+  .features article h5.icon {
+    color: #fff;
+    font-size: 26px;
+    text-align: center; }
+    .features article h5.icon span {
+      background: #222;
+      padding: 12px 17px;
+      border: 2px solid #fff;
+      border-radius: 50%; }
+  .features article h4 {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px; }
+  .features article p {
+    color: #fff;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto; }
+
+section.download {
+  background-image: url("../images/bg-download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0; }
+  section.download h2 {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white; }
+  section.download h3 {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white; }
+  section.download img.img-responsive {
+    margin: 50px auto; }
+
+footer {
+  background-color: white;
+  padding: 100px 0; }
+  footer .container {
+    max-width: 755px; }
+  footer .row {
+    margin: 30px 0; }
+    footer .row:first-child {
+      margin-top: 0; }
+    footer .row:last-child {
+      margin-bottom: 0; }
+    footer .row h2 {
+      font-size: 40px;
+      font-weight: 700; }
+    footer .row p {
+      font-size: 20px;
+      color: rgba(61, 58, 81, 0.5);
+      text-transform: uppercase; }
+    footer .row ul {
+      padding: 0; }
+      footer .row ul li {
+        display: inline-block;
+        margin: 0 10px; }
+        footer .row ul li *:first-child {
+          margin-left: 0; }
+        footer .row ul li *:last-child {
+          margin-right: 0; }
+        footer .row ul li a {
+          font-size: 40px; }
+          footer .row ul li a.ion-social-twitter {
+            color: #00a8f0; }
+          footer .row ul li a.ion-social-facebook {
+            color: #365396; }
+          footer .row ul li a.ion-social-linkedin-outline {
+            color: #006eb3; }
+          footer .row ul li a.ion-social-instagram-outline {
+            color: #386c99; }
+          footer .row ul li a.ion-social-googleplus {
+            color: #e0462e; }
+          footer .row ul li a.ion-social-pinterest-outline {
+            color: #cc1919; }
+          footer .row ul li a:hover {
+            color: #00a8f0; }
+
+/*# sourceMappingURL=main.css.map */
